@@ -6,11 +6,11 @@
 - Modified custom.rs and main.rs to make it easier to implement custom templates
 
 ## Steps to create custom template
-1. Make a copy of custom.rs, e.g. xxx-update.rs
+1. Make a copy of lure-templates/custom.rs, e.g. xxx-update.rs
 2. Insert head and body HTML
 3. Assign id attribute of 'download_button' to the button element that will trigger download of your payload.
 `<button id="download_button">Download</button>`
-6. Add an entry for the new template in main.rs
+6. Add an entry for the new template in src/main.rs
 7. `cd` into repo root directory and run `cargo run`
 
 
