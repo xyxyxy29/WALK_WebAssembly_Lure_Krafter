@@ -1,9 +1,18 @@
 # W.A.L.K. - Web Assembly Lure Krafter
-A web assembly (WASM) lure generator based on custom lure templates and written in Rust to aid with initial access leveraging WASM smuggling techniques. 
+- A web assembly (WASM) lure generator based on custom lure templates and written in Rust to aid with initial access leveraging WASM smuggling techniques. 
+- Forked from [/JumpsecLabs/WALK_WebAssembly_Lure_Krafter](https://github.com/JumpsecLabs/WALK_WebAssembly_Lure_Krafter). 
 
-<p align="center">
-  <img src="imgs/Untitled.png" alt="W.A.L.K." width=666 />
-</p>
+## Changes
+- Modified custom.rs and main.rs to make it easier to implement custom templates
+
+## Steps to create custom template
+1. Make a copy of custom.rs, e.g. xxx-update.rs
+2. Insert head and body HTML
+3. Assign id attribute of 'download_button' to the button element that will trigger download of your payload.
+`<button id="download_button">Download</button>`
+6. Add an entry for the new template in main.rs
+7. `cd` into repo root directory and run `cargo run`
+
 
 # Table of Contents
 
