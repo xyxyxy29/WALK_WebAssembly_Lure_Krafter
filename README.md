@@ -4,6 +4,9 @@
 
 ## Changes
 - Modified custom.rs and main.rs to make it easier to implement custom templates
+- To create custom templates, insert body and head HTML in /lure_templates/custom.rs
+![image](https://github.com/user-attachments/assets/10ec6793-54ed-4601-a6a9-b699e600f916)
+
 
 ## Steps to create custom template
 1. Make a copy of lure_templates/custom.rs, e.g. xxx-update.rs
