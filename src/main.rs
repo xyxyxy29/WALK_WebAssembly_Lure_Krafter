@@ -174,9 +174,8 @@ fn main() {
     let lure_types = vec![
         "Google Chrome Update".truecolor(200, 155, 0),
         "One Drive File Download".truecolor(200, 155, 0),
-		"AIA CN".truecolor(200, 155, 0),
         "Custom".truecolor(200, 155, 0),
-		"Empty".truecolor(200, 155, 0)
+		"Autodownload Empty".truecolor(200, 155, 0)
         //
         // it is possible to add more lures in lure_templates folder and this menu
         // once  you do add a file, just add an entry to this menu
